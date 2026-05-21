@@ -8,11 +8,7 @@
   "runArgs": ["--network=host", "--memory=8g", "--memory-swap=8g"],
   "mounts": [
     "type=bind,readonly,source=${localEnv:HOME}/.ssh,target=/root/.ssh",
-    //"type=bind,readonly,source=${localEnv:HOME}/Library/Application Support/mkcert/rootCA.pem,target=/usr/local/certs/rootCA.pem",
   ],
-  "containerEnv": {
-    //"REQUESTS_CA_BUNDLE": "/usr/local/certs/rootCA.pem",
-  },
   "customizations": {
     "vscode": {
       "extensions": [
