@@ -1,6 +1,6 @@
 from requests import codes
 
-from soundingcenter.SoundingCenter import Api
+from grawgo.api import Api
 
 
 def test_status(api_as_public: Api):

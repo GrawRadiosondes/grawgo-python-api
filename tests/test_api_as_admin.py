@@ -2,7 +2,7 @@ import pytest
 from faker import Faker
 from requests import codes
 
-from soundingcenter.SoundingCenter import Api
+from grawgo.api import Api
 
 
 def test_user_self(api_as_admin: Api):

@@ -3,9 +3,9 @@ requires = ["setuptools>=74.1.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "soundingcenter"
+name = "grawgo"
 version = "1.5.1"
-description = "A python lib to use the sounding center api"
+description = "A python lib to use the grawGo api"
 readme = "README.md"
 requires-python = ">=3.14"
 license = { file = "LICENSE" }
@@ -21,8 +21,8 @@ dependencies = ["requests~=2.34.0"]
 "dev" = ["pytest~=9.0.3", "Faker~=40.15.0", "python-dotenv~=1.2.2"]
 
 [project.urls]
-"Homepage" = "https://github.com/GrawRadiosondes/sounding-center-python-api"
-"Bug Tracker" = "https://github.com/GrawRadiosondes/sounding-center-python-api/issues"
+"Homepage" = "https://github.com/GrawRadiosondes/grawgo-python-api"
+"Bug Tracker" = "https://github.com/GrawRadiosondes/grawgo-python-api/issues"
 
 [tool.pytest.ini_options]
 filterwarnings = [

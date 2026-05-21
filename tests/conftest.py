@@ -6,7 +6,7 @@ import pytest
 from dotenv import load_dotenv
 from faker import Faker
 
-from soundingcenter.SoundingCenter import Api
+from grawgo.api import Api
 
 
 def load_env():
@@ -23,7 +23,7 @@ def load_env():
 def api_as_public():
     load_env()
     return Api(
-        base_url=getenv("SC_API_URL") or "https://localhost/api",
+        base_url=getenv("GG_API_URL") or "https://localhost/api",
     )
 
 
@@ -31,9 +31,9 @@ def api_as_public():
 def api_as_admin():
     load_env()
     return Api(
-        getenv("SC_API_URL") or "https://localhost/api",
-        getenv("SC_ADMIN_USERNAME") or "admin@domain.tld",
-        getenv("SC_ADMIN_PASSWORD") or "password",
+        getenv("GG_API_URL") or "https://localhost/api",
+        getenv("GG_ADMIN_USERNAME") or "admin@domain.tld",
+        getenv("GG_ADMIN_PASSWORD") or "password",
     )
 
 
@@ -41,9 +41,9 @@ def api_as_admin():
 def api_as_api():
     load_env()
     return Api(
-        getenv("SC_API_URL") or "https://localhost/api",
-        getenv("SC_API_USERNAME") or "admin@domain.tld",
-        getenv("SC_API_PASSWORD") or "password",
+        getenv("GG_API_URL") or "https://localhost/api",
+        getenv("GG_API_USERNAME") or "admin@domain.tld",
+        getenv("GG_API_PASSWORD") or "password",
     )
 
 

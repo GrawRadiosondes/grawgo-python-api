@@ -1,5 +1,5 @@
 {
-  "name": "sounding-center-python-api",
+  "name": "grawgo-python-api",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "..",
