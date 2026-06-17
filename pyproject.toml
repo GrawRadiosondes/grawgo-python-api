@@ -17,7 +17,7 @@ classifiers = [
 dependencies = ["requests~=2.34.0"]
 
 [dependency-groups]
-"dev" = ["pytest~=9.0.3", "Faker~=40.15.0", "python-dotenv~=1.2.2"]
+"dev" = ["pytest>=9.0.3,<9.2.0", "Faker~=40.15.0", "python-dotenv~=1.2.2"]
 
 [project.urls]
 "Homepage" = "https://github.com/GrawRadiosondes/grawgo-python-api"
