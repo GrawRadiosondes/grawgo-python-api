@@ -18,6 +18,8 @@ class Api:
         self.logging: bool = logging
         self.verify_https: bool = urlparse(self.base_url).hostname not in (
             "localhost",
+            "127.0.0.1",
+            "::1",
             "host.docker.internal",
         )
 
