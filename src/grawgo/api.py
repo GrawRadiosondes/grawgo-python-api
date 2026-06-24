@@ -16,7 +16,10 @@ class Api:
         self.base_url: str = base_url
         self.auth: tuple[str, str] = (username, password)
         self.logging: bool = logging
-        self.verify_https: bool = urlparse(self.base_url).hostname != "localhost"
+        self.verify_https: bool = urlparse(self.base_url).hostname not in (
+            "localhost",
+            "host.docker.internal",
+        )
 
     def log(self, message: str | dict[str, Any]) -> None:
         if self.logging:
