@@ -1,11 +1,11 @@
+.DS_Store
 .env
-
-# IDE
 .idea/misc.xml
-
-# Builds
+*.egg-info
+*.tar
+*.tar.xz
+*.whl
 build/
 dist/
-*.egg-info
-*.whl
-*.tar
+Thumbs.db
+Thumbs.db:encryptable

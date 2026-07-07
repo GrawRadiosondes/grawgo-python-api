@@ -2,9 +2,25 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "uv_sync_upgrade",
+      "type": "shell",
+      "command": "uv sync --upgrade",
+      "presentation": {
+        "clear": true,
+      },
+    },
+    {
       "label": "pytest",
       "type": "shell",
       "command": "uv run pytest -vv --capture=no",
+      "presentation": {
+        "clear": true,
+      },
+    },
+    {
+      "label": "mypy",
+      "type": "shell",
+      "command": "mypy -p grawgo",
       "presentation": {
         "clear": true,
       },
