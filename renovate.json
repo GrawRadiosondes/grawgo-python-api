@@ -1,3 +1,5 @@
 {
-  "extends": ["github>GrawRadiosondes/renovate-config"]
+  "extends": [
+    "github>GrawRadiosondes/renovate-config"
+  ]
 }
