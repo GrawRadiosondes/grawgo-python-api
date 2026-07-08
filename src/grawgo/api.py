@@ -16,7 +16,7 @@ class Api:
         self.base_url: str = base_url
         self.auth: tuple[str, str] = (username, password)
         self.logging: bool = logging
-        self.verify_https: bool = urlparse(self.base_url).hostname not in (
+        self.verify_https: bool = urlparse(url=self.base_url).hostname not in (
             "localhost",
             "127.0.0.1",
             "::1",
@@ -38,7 +38,7 @@ class Api:
     def get(self, path: str, authorized: bool = True) -> Response:
         self.log(message=f"GET {self.base_url}/{path}")
 
-        auth = None
+        auth: tuple[str, str] | None = None
         if authorized:
             auth = self.auth
 
@@ -81,7 +81,7 @@ class Api:
     def user_self_stations(self) -> list[Any]:
         return self.user_self().json()["data"]["stations"]
 
-    def user_self_first_station(self):
+    def user_self_first_station(self) -> Any:
         return self.user_self_stations()[0]
 
     def create_user(self, email: str, password: str, role: str, name: str) -> Response:
