@@ -21,7 +21,7 @@ dependencies = [
 [dependency-groups]
 "dev" = [
     "pytest~=9.1.1",
-    "Faker~=40.28.1",
+    "Faker~=40.31.0",
     "python-dotenv~=1.2.2",
     "mypy~=2.3.0"
 ]
