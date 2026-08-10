@@ -27,8 +27,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/GrawRadiosondes/grawgo-python-api"
-"Bug Tracker" = "https://github.com/GrawRadiosondes/grawgo-python-api/issues"
+"Homepage" = "https://github.com/GrawRadiosondes/grawgo-api-python"
+"Bug Tracker" = "https://github.com/GrawRadiosondes/grawgo-api-python/issues"
 
 [tool.pytest.ini_options]
 filterwarnings = [

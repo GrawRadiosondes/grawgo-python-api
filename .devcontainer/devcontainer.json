@@ -1,5 +1,5 @@
 {
-  "name": "grawgo-python-api",
+  "name": "grawgo-api-python",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "..",
