@@ -45,6 +45,7 @@
   "python.analysis.userFileIndexingLimit": -1,
   "python.defaultInterpreterPath": "/opt/.venv/bin/python",
   "python.terminal.activateEnvironment": true,
+  "python.terminal.useEnvFile": true,
   "remote.autoForwardPorts": false,
   "ruff.interpreter": ["/opt/.venv/bin/python"],
   "terminal.integrated.scrollback": 100000,
