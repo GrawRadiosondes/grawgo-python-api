@@ -12,15 +12,14 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "Anthropic.claude-code",
         "charliermarsh.ruff",
         "docker.docker",
         "esbenp.prettier-vscode",
         "fill-labs.dependi",
         "flyfly6.terminal-in-status-bar",
-        "github.copilot",
-        "github.copilot-chat",
         "github.vscode-github-actions",
-        "Google.geminicodeassist",
+        "iulian-radu-at.vscode-tasks-sidebar",
         "ms-azuretools.vscode-docker",
         "ms-python.python",
         "spencerwmiles.vscode-task-buttons",
