@@ -25,6 +25,18 @@ def test_create_flight(api_as_api: Api, faker: Faker):
     )
 
 
+def test_ascend_flight(api_as_api: Api, faker: Faker):
+    flight_id = api_as_api.create_flight(
+        station_id=api_as_api.user_self_first_station()["data"]["id"],
+        status="created",
+        sonde_serial=faker.name(),
+        set_frequency=faker.random_int(min=400, max=406),
+        sonde_firmware_version=faker.name(),
+    ).json()["data"]["id"]
+
+    assert api_as_api.ascend_flight(flight_id=flight_id).status_code == codes.ok
+
+
 def test_create_measurement(api_as_api: Api, faker: Faker):
     assert (
         api_as_api.create_measurement(

@@ -135,6 +135,30 @@ class Api:
             },
         )
 
+    def update_flight_status(self, flight_id: int, status: str) -> Response:
+        return self.post(
+            path="flight/updateStatus",
+            json={
+                "id": flight_id,
+                "status": status,
+            },
+        )
+
+    def ascend_flight(self, flight_id: int) -> Response:
+        return self.update_flight_status(flight_id=flight_id, status="ascending")
+
+    def descend_flight(self, flight_id: int) -> Response:
+        return self.update_flight_status(flight_id=flight_id, status="descending")
+
+    def finish_flight(self, flight_id: int) -> Response:
+        return self.update_flight_status(flight_id=flight_id, status="finished")
+
+    def fail_flight(self, flight_id: int) -> Response:
+        return self.update_flight_status(flight_id=flight_id, status="failure")
+
+    def close_flight(self, flight_id: int) -> Response:
+        return self.update_flight_status(flight_id=flight_id, status="closed")
+
     def create_measurement(
         self,
         flight_id: int,
